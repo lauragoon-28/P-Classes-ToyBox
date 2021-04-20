@@ -6,7 +6,7 @@ namespace P_Classes_ToyBox
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
