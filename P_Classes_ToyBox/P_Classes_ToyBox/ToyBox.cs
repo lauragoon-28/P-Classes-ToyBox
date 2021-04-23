@@ -18,20 +18,14 @@ namespace P_Classes_ToyBox
             Owner = "";
             Location = "";
 
-
         }
 
-        public string GetRandomToy() 
+        public Toy GetRandomToy() 
         {
             Random rand = new Random();
-            int newToy = 0;
-            for (int i = 0; i < Toys.Count; i++)
-            {
-                newToy = rand.Next(0, Toys.Count);
-            }
+            int newToyIndex = rand.Next(0, Toys.Count - 1);
             
-            return;
-
+            return Toys[newToyIndex];
 
         }
 
