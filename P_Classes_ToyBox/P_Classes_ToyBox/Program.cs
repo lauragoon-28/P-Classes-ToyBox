@@ -79,7 +79,8 @@ namespace P_Classes_ToyBox
                     Toy currentToy = currentToyBox.Toys[j];
                     Console.WriteLine($"     - Manufacturer: {currentToy.Manufacturer}, Name: {currentToy.Name}, Price: {currentToy.Price.ToString("C")}, Notes: {currentToy.getNotes()}");
                 }
-
+                Console.WriteLine($"Random toy from {currentToyBox.Owner}'s toybox:");
+                Console.WriteLine(currentToyBox.GetRandomToy());
                 Console.WriteLine();
             }
 

@@ -17,24 +17,17 @@ namespace P_Classes_ToyBox
             Toys = new List<Toy>();
             Owner = "";
             Location = "";
-
         }
 
         public Toy GetRandomToy() 
         {
             Random rand = new Random();
             int newToyIndex = rand.Next(0, Toys.Count - 1);
+
+            //Toy rToy = Toys[ran.Next(0, Toys.Count)];
             
             return Toys[newToyIndex];
-
         }
-
-
-
-
-
-
-
 
     }
 }
